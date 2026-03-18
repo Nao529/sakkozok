@@ -14,4 +14,34 @@ export function rendezesEsemenykezelok(lista, TABLAZATELEM) {
         });
         tablazatMegjelenit(lista, TABLAZATELEM);
     });
+    nevCsokk.addEventListener("click", function (event) {
+        lista.sort(function (a, b) {
+            return a.nev > b.nev ? -1 : +1;
+        });
+        tablazatMegjelenit(lista, TABLAZATELEM);
+    });
+    nemzetNo.addEventListener("click", function (event) {
+        lista.sort(function (a, b) {
+           return a.nemzetiseg < b.nemzetiseg ? -1 : +1;
+        });
+        tablazatMegjelenit(lista, TABLAZATELEM);
+    });
+    nemzetCsokk.addEventListener("click", function (event) {
+        lista.sort(function (a, b) {
+            return a.nemzetiseg > b.nemzetiseg ? -1 : +1;
+        });
+        tablazatMegjelenit(lista, TABLAZATELEM);
+    });
+    gyozNo.addEventListener("click", function (event) {
+        lista.sort(function (a, b) {
+            return a.gyozelmek_szama - b.gyozelmek_szama;
+        });
+        tablazatMegjelenit(lista, TABLAZATELEM);
+    });
+    gyozCsokk.addEventListener("click", function (event) {
+        lista.sort(function (a, b) {
+            return b.gyozelmek_szama - a.gyozelmek_szama;
+        });
+        tablazatMegjelenit(lista, TABLAZATELEM);
+    });
 }
