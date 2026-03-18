@@ -1,5 +1,5 @@
 import { SAKKOZOKLISTA } from "./adatok.js";
-import { rendezesEsemenykezelok } from "./fuggvenyek.js";
+import { rendezesEsemenykezelok, sakkPoziciok } from "./fuggvenyek.js";
 import { tablazatMegjelenit } from "./tablazatMegjelenit.js";
 
 const TABLAZATELEM = document.querySelector("#tablazat");
