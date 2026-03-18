@@ -6,3 +6,5 @@ const TABLAZATELEM = document.querySelector("#tablazat");
 
 tablazatMegjelenit(SAKKOZOKLISTA, TABLAZATELEM);
 rendezesEsemenykezelok(SAKKOZOKLISTA, TABLAZATELEM);
+
+sakkPoziciok()

@@ -55,17 +55,17 @@ export function sakkPoziciok() {
         let lep1 = pozicio1.value;
         let lep2 = pozicio2.value;
         
-        let eredmeny = utesEllenorzes(lep1, lep2);
+        let o1 = lep1[0];
+        let s1 = lep1[1];
+        let o2 = lep2[0];
+        let s2 = lep2[1];
+        
+        let eredmeny = utesEllenorzes(o1, s1, o2, s2);
         console.log(eredmeny);
     });
 }
 
-export function utesEllenorzes(lep1, lep2) {
-    let o1 = lep1[0];
-    let s1 = lep1[1];
-    let o2 = lep2[0];
-    let s2 = lep2[1];
-
+export function utesEllenorzes(o1, s1, o2, s2) {
     switch (o1) {
         case "a":
             o1 = 1;
